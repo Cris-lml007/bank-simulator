@@ -10,7 +10,8 @@ class Account extends Model
     use HasFactory;
 
     public $fillable=[
-        'user_id'
+        'user_id',
+        'balance'
     ];
 
     public function user(){

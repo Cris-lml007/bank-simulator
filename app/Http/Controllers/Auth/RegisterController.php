@@ -71,7 +71,8 @@ class RegisterController extends Controller
         ]);
 
         Account::create([
-            'user_id' => $u->id
+            'user_id' => $u->id,
+            'balance' => 1000
         ]);
 
         return $u;
